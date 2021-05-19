@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Property</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Properties</value>
+    </caseValues>
+    <layouts>
+        <layout>Property Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Property Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Property Layout for SS Users</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Property Address</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>Apartment_Units</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Single_Family_Houses</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>PropertyID_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Property_Sold_To_Empty</name>
+    </validationRules>
+</CustomObjectTranslation>

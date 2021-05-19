@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Property_Sold_To_Empty</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISBLANK(Customer_Price__c)),  Property_Sold_To__c =&apos;&apos; )</errorConditionFormula>
+    <errorDisplayField>Property_Sold_To__c</errorDisplayField>
+    <errorMessage>Please add the customer to whom property is sold to!</errorMessage>
+</ValidationRule>

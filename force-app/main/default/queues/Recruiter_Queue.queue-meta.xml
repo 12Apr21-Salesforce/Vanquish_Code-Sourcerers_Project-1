@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Recruiter Queue</name>
+    <queueMembers>
+        <users>
+            <user>mario_ruiz.00de0000000erbwmaa.d850e1pen8p5.7meudz2.x1i5qymxinjv@dex403.56945.com</user>
+            <user>megan_smith.00de0000000erbwmaa.ub6wtrx0p3qk.fjfqms.btiia6nzyszu@dex403.56945.com</user>
+            <user>phil_katz.00de0000000erbwmaa.la4g9ayxntbu.poqxk9on.2b4updac5qux@dex403.56945.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Candidate__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Position__c</sobjectType>
+    </queueSobject>
+</Queue>

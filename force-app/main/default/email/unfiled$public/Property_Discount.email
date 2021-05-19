@@ -1,0 +1,8 @@
+Hi,
+
+{!Property__c.Property_Sold_To__c} is quoting discount of {!Property__c.Discount_Percentage__c} on {!Property__c.Property_ID__c}.
+
+Need your approval for this!
+
+Thanks,
+Sales team.
