@@ -14,7 +14,7 @@
         <minutesToComplete>240</minutesToComplete>
         <timeTriggers>
             <actions>
-                <name>Case.ChangePriorityToHigh9288</name>
+                <name>ChangePriorityToHigh9288</name>
                 <type>FieldUpdate</type>
             </actions>
             <timeLength>-60</timeLength>

@@ -36,7 +36,7 @@
             <quickActionLayoutItems>
                 <emptySpace>false</emptySpace>
                 <field>Area_in_SqFt__c</field>
-                <uiBehavior>Edit</uiBehavior>
+                <uiBehavior>Required</uiBehavior>
             </quickActionLayoutItems>
         </quickActionLayoutColumns>
     </quickActionLayout>

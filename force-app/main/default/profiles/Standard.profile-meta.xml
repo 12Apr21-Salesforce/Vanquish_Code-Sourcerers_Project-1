@@ -231,11 +231,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Apartment__c.Cost_of_Building__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>Apartment__c.Country__c</field>
         <readable>false</readable>
@@ -2607,11 +2602,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Property__c.Area_in_SqFt__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Property__c.Bath_Rooms__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -4329,6 +4319,10 @@
     </objectPermissions>
     <pageAccesses>
         <apexPage>Fix</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>addAPropertyPage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <recordTypeVisibilities>
