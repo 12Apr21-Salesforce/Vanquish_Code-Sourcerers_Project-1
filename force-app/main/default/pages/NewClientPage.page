@@ -1,13 +1,13 @@
-<apex:page standardController="Customers__c">
-    <apex:form id="addNewCustomerForm">
+<apex:page standardController="Client__c">
+    <apex:form id="addNewClientForm">
         <apex:pageBlock title="Please Enter Your Contact Information">
             <apex:pageBlockSection>
-                <apex:inputField value="{!Customer__c.First_Name__c}"/>
-                <apex:inputField value="{!Customer__c.Last_Name__c}"/>
-                <apex:inputField value="{!Customer__c.First_Name__c}"/>
-                <apex:inputField value="{!Customer__c.Phone_No__c}"/>
-                <apex:inputField value="{!Customer__c.Customer_emailId__c}"/>
-                <apex:inputField value="{!Customer__c.Property_Interested_In__c}"/>
+                <apex:inputField value="{!Client__c.Name}"/>
+                <apex:inputField value="{!Client__c.Property_Interested_In__c}"/>
+                <apex:inputField value="{!Client__c.Client_Email__c}"/>
+                <apex:inputField value="{!Client__c.Client_Phone__c}"/>
+                <apex:inputField value="{!Client__c.Funding_Status__c}"/>
+                <apex:inputField value="{!Client__c.Client_Status__c}"/>
             </apex:pageBlockSection>
             <apex:pageBlockButtons>
                 <apex:commandButton action="{!save}" value="Save"/>
