@@ -11,13 +11,16 @@
                 </apex:panelGroup>    
             
 
-            V this is a  mock up of the join us interface V
+            V this is a  mock up of the join us interface, save function is not operating V
             <apex:pageBlockSection title = "Looking to join Us, Tell us about yourself">
-                <apex:inputField value="{!neuHire.Last_Name__c}"/>
+                <apex:inputField value="{!neuHire.First_Name__c}"/>
                 <apex:inputField value="{!neuHire.Email__c}"/>
+                <apex:inputField value="{!neuHire.Last_Name__c}"/>
                 <apex:inputField value="{!neuHire.Phone__c}"/>
                 <br/>
-                <apex:panelGroup>
+                <apex:panelGroup style="float: center">
+                    <!--awaiting information on possible change to standard controller with extension for redirects, 
+                        if not will need to create a save method  -->
                     <apex:commandButton action="null" value="Save"/>
                 </apex:panelGroup>
             </apex:pageBlockSection>
