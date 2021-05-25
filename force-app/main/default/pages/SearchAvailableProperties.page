@@ -22,8 +22,10 @@
                 <apex:column value="{!prop.Street_Address__c}"/>
                 <apex:column value="{!prop.City__c}"/>
             </apex:pageBlockTable>
-            <apex:outputText value="No properties match criteria" rendered="{!AND(NOT(recordsFound),searched)}"/>
-            <apex:commandLink status="notifyUser" 
+            <apex:outputText value="No properties match criteria." rendered="{!AND(NOT(recordsFound),searched)}"/>
+            <apex:outputLink value="/apex/addAPropertyPage" rendered="{!AND(NOT(recordsFound),searched)}">
+                Add new Property
+            </apex:outputLink>
         </apex:pageBlock>
     </apex:form>
 </apex:page>
