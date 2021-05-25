@@ -1,4 +1,4 @@
-public with sharing class SeeContactsList {
+public class SeeContactsList {
 
     public String searchText {
         get {
@@ -9,38 +9,34 @@ public with sharing class SeeContactsList {
         }
     }
 
-    public Boolean matches {
-        get {
-            return ((contactList != null) && (contactList.size() != 0));
-        }
-        set;
-    }
+    // public Boolean matches {
+    //     get {
+    //         return ((contactList != null) && (contactList.size() != 0));
+    //     }
+    //     set;
+    // }
 
     public Boolean searched {get; set;}
 
-    public ApexPages.StandardSetController setCon {get; set;}
+    //public ApexPages.StandardSetController setCon {get; set;}
 
     // Create a variable to hold a list of contacts pulled in through a query if no list is found
-      public List<Contact> contactList {
+      public ApexPages.StandardSetController contactList {
 
             get {
                 if (contactList == null) {
-                    contactList = new List<Contact>();
-                    for (Contact con : [SELECT Name, Phone, Email, Account.Name
-                                            FROM Contact]) {
-                        contactList.add(con);
+                    contactList = new ApexPages.StandardSetController(Database.getQueryLocator(
+                        [SELECT Id, Name, Phone, Email, Account.Name FROM Contact]
+                    ));
                     }
-
-                if (setCon != null) {
-                    return (List<Contact>)setCon.getRecords();
-
-                    }
-
-            }
-            return contactList;
-        }
-        set;
+                    return contactList;
+                }       
+                set;
     }
+
+        public List<Contact> getContacts() {
+            return (List<Contact>) contactList.getRecords();
+        }
 
 
     public void Search() {
@@ -56,9 +52,9 @@ public with sharing class SeeContactsList {
                                         RETURNING Contact (Id, Name, Email,
                                         Phone, Account.Name)][0];
 
-            setCon = new ApexPages.StandardSetController(contacts);
-            setCon.setPageNumber(1);
-            setCon.setPageSize(10);
+            contactList = new ApexPages.StandardSetController(contacts);
+            contactList.setPageNumber(1);
+            contactList.setPageSize(10);
 
             searched = true;
 
