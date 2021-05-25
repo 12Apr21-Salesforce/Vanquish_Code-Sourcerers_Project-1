@@ -127,11 +127,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Apartment__c.Cost_of_Building__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Apartment__c.Country__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2498,11 +2493,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Property__c.Approval_Status__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Property__c.Area_in_SqFt__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
