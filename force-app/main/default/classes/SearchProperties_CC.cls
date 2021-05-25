@@ -1,4 +1,4 @@
-public without sharing class SearchProperties_CC {
+public with sharing class SearchProperties_CC {
 
 
     public String searchText {
