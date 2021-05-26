@@ -1,9 +1,9 @@
 <apex:page standardController="Contact" extensions="HireMeEXT" lightningStylesheets="true">
     
     <apex:form >
-        <apex:pageBlock title="Hire Us">
+        <apex:pageBlock title="Looking to join Us">
             
-            <apex:pageBlockSection title = "Looking to join Us, Tell us about yourself">
+            <apex:pageBlockSection title = "please enter your contact information">
                 <apex:inputField value="{!Contact.FirstName}"/>
                 <apex:inputField value="{!Contact.Email}"/>
                 <apex:inputField value="{!Contact.LastName}"/>
@@ -11,9 +11,12 @@
                 
                 <br/>
                 <apex:panelGroup style="float: center">
-                    <apex:commandButton ReRender = "confrimText" action="{!save2}" value="Save"/>
+                    <apex:commandButton action="{!save2}" value="Save"/><br/>
+                    
                 </apex:panelGroup>
-                <apex:outputText id = "confrimText">{!greeting}</apex:outputText>
+                <apex:outputText value = "Information succesfully added" rendered = "{!DisplayConfirm}"/>
+                
+                
                 
             </apex:pageBlockSection>
             

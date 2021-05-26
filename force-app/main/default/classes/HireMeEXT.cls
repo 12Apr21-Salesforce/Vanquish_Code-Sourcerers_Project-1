@@ -3,8 +3,9 @@ public with sharing class HireMeEXT {
     private final Contact con;
     // use this to get the stadard controller of the page to call its save function
     private ApexPages.StandardController c1;
-    public String confrimMes = '';
+    public Boolean DisplayConfirm {get;set;}
 
+    
     
     // The extension constructor initializes the private member
     // variable con by using the getRecord method from the standard
@@ -12,6 +13,7 @@ public with sharing class HireMeEXT {
     public HireMeEXT(ApexPages.StandardController stdController) {
         this.con = (Contact)stdController.getRecord();
         this.c1 = stdController;
+        DisplayConfirm = false;
     }
 
     
@@ -36,15 +38,12 @@ public with sharing class HireMeEXT {
     public PageReference save2(){
 
         c1.save();
-        confrimMes = 'Information succesfully added';
+        DisplayConfirm = true;
         PageReference newPage = Page.HireMePage;
-        newPage.setRedirect(true);
+        newPage.setRedirect(false);
 
         return newPage;
 
     }
-    public String getGreeting() {
-
-        return confrimMes ;
-    }
+    
 }
