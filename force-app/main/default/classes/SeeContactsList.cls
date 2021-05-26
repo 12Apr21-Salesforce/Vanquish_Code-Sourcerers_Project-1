@@ -9,35 +9,29 @@ public class SeeContactsList {
         }
     }
 
-    // public Boolean matches {
-    //     get {
-    //         return ((contactList != null) && (contactList.size() != 0));
-    //     }
-    //     set;
-    // }
+    public Boolean matches {
+        get {
+            return ((contactList != null) && (contactList.size() != 0));
+        }
+        set;
+    }
 
     public Boolean searched {get; set;}
 
     //public ApexPages.StandardSetController setCon {get; set;}
+    List<Contact> contactList = [SELECT Name, Phone, Email, Account.Name FROM Contact];
+    ApexPages.StandardSetController ssc = new ApexPages.StandardSetController(contactList);
 
-    // Create a variable to hold a list of contacts pulled in through a query if no list is found
-      public ApexPages.StandardSetController contactList {
+      public List<Contact> cListMethod {
 
             get {
-                if (contactList == null) {
-                    contactList = new ApexPages.StandardSetController(Database.getQueryLocator(
-                        [SELECT Id, Name, Phone, Email, Account.Name FROM Contact]
-                    ));
+                if (cListMethod == null) {
+                        cListMethod = contactList;
                     }
-                    return contactList;
+                    return cListMethod;
                 }       
                 set;
     }
-
-        public List<Contact> getContacts() {
-            return (List<Contact>) contactList.getRecords();
-        }
-
 
     public void Search() {
 
@@ -47,14 +41,14 @@ public class SeeContactsList {
                 searchText = searchText + '*';
             }
 
-            List<Contact> contacts = [FIND :searchText
-                                        IN ALL FIELDS
-                                        RETURNING Contact (Id, Name, Email,
-                                        Phone, Account.Name)][0];
+                            //  cList = [FIND :searchText
+                            //             IN ALL FIELDS
+                            //             RETURNING Contact (Name, Email,
+                            //             Phone, Account.Name)][0];
 
-            contactList = new ApexPages.StandardSetController(contacts);
-            contactList.setPageNumber(1);
-            contactList.setPageSize(10);
+            ssc = new ApexPages.StandardSetController(contactList);
+            ssc.setPageNumber(1);
+            ssc.setPageSize(10);
 
             searched = true;
 
