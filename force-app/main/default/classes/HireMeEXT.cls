@@ -36,9 +36,9 @@ public with sharing class HireMeEXT {
     public PageReference save2(){
 
         c1.save();
-        PageReference newPage = Page.HireMePage;
-        newPage.setRedirect(false);
         confrimMes = 'Information succesfully added';
+        PageReference newPage = Page.HireMePage;
+        newPage.setRedirect(true);
 
         return newPage;
 
