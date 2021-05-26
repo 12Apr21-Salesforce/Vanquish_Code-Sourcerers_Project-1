@@ -12,11 +12,6 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Open</fullName>
-                <default>false</default>
-                <label>Open</label>
-            </value>
-            <value>
                 <fullName>In Negotiation</fullName>
                 <default>false</default>
                 <label>In Negotiation</label>
@@ -30,6 +25,17 @@
                 <fullName>Closed</fullName>
                 <default>false</default>
                 <label>Closed</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Open</label>
             </value>
         </valueSetDefinition>
     </valueSet>

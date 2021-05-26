@@ -1,0 +1,16 @@
+<apex:page controller="NewApartmentAndUnits" lightningStylesheets="true">
+    <apex:form >
+        <apex:pageBlock title="New Apartment page" >
+            <apex:pageblockSection >
+                <apex:inputField value="{! wApt.apt.Name}"/>
+                <apex:inputField value="{! wApt.apt.Total_SqFt_of_the_Building__c}"/>
+                <apex:inputField value="{! wApt.apt.Cost_of_Building__c}"/>
+                <apex:inputfield value="{! wApt.apt.Total_No_Of_Units__c}"/>
+            </apex:pageblockSection>
+   
+            <apex:pageblockbuttons >
+                <apex:commandButton value="Save" action="{!newApartment}" />
+            </apex:pageblockbuttons>    
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

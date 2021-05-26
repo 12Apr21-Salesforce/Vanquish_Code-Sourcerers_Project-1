@@ -1,0 +1,29 @@
+<apex:page controller="NewApartmentAndUnits" lightningStylesheets="true">
+    <apex:form id="newPropRow">
+        <apex:pageBlock title="New Properties/Units " >
+            <apex:pageblockSection >
+                
+                <apex:outputText Value="{!wApt.apt.Name}"/>
+                
+                <apex:pageBlockTable value="{! wApt.prop}" var="p">
+                    <apex:column headerValue="Property Name">
+                        <apex:inputField value="{! p.Name}"/>
+                    </apex:column>                    
+                    <apex:column headerValue="Property ID">
+                        <apex:inputField value="{! p.Property_ID__c}"/>
+                    </apex:column>          
+                    <apex:column headerValue="Area in Sqft">
+                        <apex:inputfield value="{! p.Area_in_SqFt__c}"/>   
+                    </apex:column>   
+                    <apex:facet name="footer"> 
+                        <apex:commandLink value="Add Row" action="{!addRow}" rerender="newPropRow,error"/>
+                    </apex:facet>  
+                </apex:pageBlockTable>          
+                
+            </apex:pageblockSection>
+            <apex:pageblockbuttons >
+                <apex:commandButton value="Save" action="{!saveProperties}" />
+            </apex:pageblockbuttons>    
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -128,11 +128,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Apartment__c.Cost_of_Building__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Apartment__c.Country__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -159,11 +154,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Apartment__c.Total_No_Of_Units__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Apartment__c.Total_SqFt_of_the_Building__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2503,11 +2493,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Property__c.Area_in_SqFt__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Property__c.Bath_Rooms__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2552,24 +2537,19 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Property__c.List_Sale_Price__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>Property__c.List_Price__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
+        <editable>false</editable>
         <field>Property__c.Property_Sold_To__c</field>
-        <readable>true</readable>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Property__c.State__c</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Property__c.Status__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
