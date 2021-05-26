@@ -1,4 +1,13 @@
-<apex:page standardController="Client__c" extensions="reRoutetoContactList" lightningStylesheets="true">
+<apex:page standardController="Client__c" extensions="reRoutetoContactList" lightningStylesheets="true" showHeader="false">
+    <!-- <apex:pageBlock >
+        
+            <!-- <apex:stylesheet value="{!URLFOR($Resource.projectOneCSS, 'projectOneCSS.css')}"/> -->
+
+            <!-- <apex:outputLink value="https://revrealestate.force.com/SevenStones/s/" id="homeLink">Home</apex:outputLink>
+            <apex:outputLink value="https://universalcontainers207--c.visualforce.com/apex/NewClientPage" id="newClientLink">Partner Tools</apex:outputLink>
+             -->
+
+    <!-- </apex:pageBlock> -->
     <apex:form id="addNewClientForm">
         <apex:pageBlock title="Please Enter Your Contact Information" >
             <apex:pageBlockSection >
