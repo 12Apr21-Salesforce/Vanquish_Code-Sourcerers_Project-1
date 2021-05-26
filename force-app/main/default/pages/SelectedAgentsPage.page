@@ -1,5 +1,4 @@
 <apex:page controller="AgentsController" tabStyle="Contact" lightningStylesheets="true">
-    <!--
     <apex:form >
         <apex:pageBlock title="Your Selected Agents">
             <apex:pageMessages />
@@ -7,11 +6,10 @@
                 <apex:commandButton action="{!newSearch}" value="New Search" />
             </apex:pageBlockButtons>
             <apex:pageBlockTable var="a" value="{!agents}" >
-                <apex:column value="{!a.agents.Name}" />
-                <apex:column value="{!a.agents.Phone}" />
-                <apex:column value="{!a.agents.Email}" />
+                <apex:column value="{!a.Name}" />
+                <apex:column value="{!a.Phone}" />
+                <apex:column value="{!a.Email}" />
             </apex:pageBlockTable>
         </apex:pageBlock>
     </apex:form>
--->
 </apex:page>
