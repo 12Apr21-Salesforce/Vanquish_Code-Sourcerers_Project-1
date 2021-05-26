@@ -1,7 +1,7 @@
 <apex:page standardController="Client__c" extensions="reRoutetoContactList" lightningStylesheets="true">
     <apex:form id="addNewClientForm">
-        <apex:pageBlock title="Please Enter Your Contact Information">
-            <apex:pageBlockSection>
+        <apex:pageBlock title="Please Enter Your Contact Information" >
+            <apex:pageBlockSection >
                 <apex:inputField value="{!Client__c.Name}"/>
                 <apex:inputField value="{!Client__c.Property_Interested_In__c}"/>
                 <apex:inputField value="{!Client__c.Client_Email__c}"/>
@@ -9,7 +9,7 @@
                 <apex:inputField value="{!Client__c.Funding_Status__c}"/>
                 <apex:inputField value="{!Client__c.Client_Status__c}"/>
             </apex:pageBlockSection>
-            <apex:pageBlockButtons>
+            <apex:pageBlockButtons location="bottom" >
                 <apex:commandButton action="{!saveAndRedirect}" value="Save"/>
             </apex:pageBlockButtons>
         </apex:pageBlock>

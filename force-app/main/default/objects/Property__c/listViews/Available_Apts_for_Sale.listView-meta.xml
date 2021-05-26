@@ -6,7 +6,6 @@
     <columns>Property_ID__c</columns>
     <columns>Area_in_SqFt__c</columns>
     <columns>Unit_Type__c</columns>
-    <columns>List_Sale_Price__c</columns>
     <columns>Status__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
