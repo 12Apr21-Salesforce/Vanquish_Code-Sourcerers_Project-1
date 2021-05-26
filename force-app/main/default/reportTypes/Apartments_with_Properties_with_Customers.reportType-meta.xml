@@ -145,11 +145,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>List_Sale_Price__c</field>
-            <table>Apartment__c.AppartmentUnits__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Customer_Price__c</field>
             <table>Apartment__c.AppartmentUnits__r</table>
         </columns>

@@ -57,12 +57,13 @@ public with sharing class AgentsController {
          *                   -- the String 'Please select at least one Course'
          *                   -- return null
          */
-        if(selectedAgents.size() > 0) {
-            return Page.SelectedAgentsPage;
-        } else {
-            ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR,'Please select at least one Agent'));
-            return null;
-        }
+    //     if(selectedAgents.size() > 0) {
+    //         return Page.SelectedAgentsPage;
+    //     } else {
+    //         ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR,'Please select at least one Agent'));
+    //         return null;
+    //     }
+    return null;
     }
 
     /** TODO #2: Declare a read-only property, whose type is a List of
@@ -102,11 +103,11 @@ public with sharing class AgentsController {
      *      -- Call the setRedirect (true) method of the newPage property
      *      -- return the newPage property
      */
-    public Pagereference newSearch() {
-        Pagereference newPage = Page.ListOfAgents;
-        newPage.setRedirect(true);
-        return newPage;
-    }
+    // public Pagereference newSearch() {
+    //     Pagereference newPage = Page.ListOfAgents;
+    //     newPage.setRedirect(true);
+    //     return newPage;
+    // }
 
     // Wrapper class
     public class ContactWrapper {

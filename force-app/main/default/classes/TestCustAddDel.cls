@@ -3,7 +3,6 @@ public class TestCustAddDel {
     @isTest static void testCustAddition(){
     	Customers__c custAdd = new Customers__c(Name='Steven Peter',First_Name__c='Steven', 
                                     Last_Name__c='Peter', Stage__c='Open', Customer_Price__c=120000);
-        //insert custAdd;
         Test.startTest();
         Database.SaveResult custSave = Database.insert(custAdd,true);
         Test.stopTest();

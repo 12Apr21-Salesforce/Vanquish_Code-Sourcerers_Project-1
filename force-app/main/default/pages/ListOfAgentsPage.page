@@ -1,4 +1,5 @@
-<apex:page controller="AgentsController" tabStyle="Contact" lightningStylesheets="true">
+<apex:page controller="AgentsController" tabStyle="Contact" lightningStylesheets="true"> 
+<!--
        <apex:form >
         <apex:pageBlock title="Available Agents">
             <apex:pageMessages />
@@ -14,5 +15,5 @@
                 <apex:column value="{!a.agentList.Email}" />
             </apex:pageBlockTable>
         </apex:pageBlock>
-    </apex:form>
+    </apex:form>-->
 </apex:page>

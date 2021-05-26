@@ -215,16 +215,6 @@
         <fields>TASK.LAST_UPDATE</fields>
         <relatedList>RelatedHistoryList</relatedList>
     </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>Property_ID__c</fields>
-        <fields>Apartment_Name__c</fields>
-        <fields>Area_in_SqFt__c</fields>
-        <fields>Customer_Price__c</fields>
-        <fields>Status__c</fields>
-        <fields>Year_Build__c</fields>
-        <relatedList>Property__c.Property_Sold_To__c</relatedList>
-    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>
