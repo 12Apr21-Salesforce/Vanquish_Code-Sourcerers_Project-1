@@ -10,7 +10,7 @@ public with sharing class reRoutetoContactList {
 
             controller.save();
 
-            PageReference newPage = Page.contactListPage;
+            PageReference newPage = Page.ListOfAgentsPage;
             newPage.setRedirect(true);
     
             return newPage;
