@@ -14,17 +14,22 @@ private class AgentsController_Test {
 	// Set the current page
         Pagereference ListOfAgentsPage = Page.ListOfAgentsPage;
         Test.setCurrentPage(ListOfAgentsPage);
+
+        //List<Contact> ags = [SELECT LastName FROM Contact];
         
         // Do the test
         Test.startTest();
         
         // Instantiate the controller
         AgentsController ac = new AgentsController();
+
+        //ac.agents = ags;
         
         // Get the list of ContactWrapper elements
         List<AgentsController.ContactWrapper> contactWrappers = ac.agentList;
+        System.debug(contactWrappers);
         
-        // Modify the list by checking all the elements
+        // Modify the list by selecting all the elements with a check in the boxes
         for (AgentsController.ContactWrapper wrapper : contactWrappers) {
             wrapper.checked = true;
         }
@@ -34,6 +39,8 @@ private class AgentsController_Test {
         
         // Navigate to SelectedAgentsPage by callng the listAgents method - capture the resulting url
         String url = ac.listAgents().getURL();
+
+        ac.newSearch();
         
         Test.stopTest();
         
@@ -50,4 +57,8 @@ private class AgentsController_Test {
         // Check the correct navigation to ListCourseDeliveriesPage
         System.assertEquals(Page.SelectedAgentsPage.getURL(), url, 'ERROR: Expected to navigate to /apex/selectedagentspage');
     }
+
+
+
+
 }

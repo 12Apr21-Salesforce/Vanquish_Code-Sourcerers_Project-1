@@ -1,5 +1,17 @@
 public with sharing class AgentsController {
 
+    
+    // Wrapper class
+    public class ContactWrapper {
+        public Contact agents {get; set;}
+        public Boolean checked {get; set;}
+
+        public ContactWrapper(Contact c) {
+            agents = c;
+            checked = false;
+        }
+    }
+
     // Represents the main Agents list
     public List<ContactWrapper> agentList {
         get {
@@ -39,6 +51,7 @@ public with sharing class AgentsController {
             }
         }
 
+        // if there are agents selected, return navigate to the Selected Agents Page
         if(selectedAgents.size() > 0) {
             return Page.SelectedAgentsPage;
         } else {
@@ -48,35 +61,24 @@ public with sharing class AgentsController {
         
     }
 
-
-     public List<Contact> agents {
-         get {
-             if(agents == null) {
-                 agents = new List<Contact>([SELECT Id, Name, City__c, State__c, Phone, Email
-                                                             FROM Contact
-                                                             WHERE Id IN :selectedAgents.keySet()
-                                                             ORDER BY Name]);
-             }
-             return agents;
-         } 
-         private set;   
-     }
-
-    
-    public Pagereference newSearch() {
-        Pagereference newPage = Page.ListOfAgentsPage;
-        newPage.setRedirect(true);
-        return newPage;
-    }
-
-    // Wrapper class
-    public class ContactWrapper {
-        public Contact agents {get; set;}
-        public Boolean checked {get; set;}
-
-        public ContactWrapper(Contact c) {
-            agents = c;
-            checked = false;
+        // if the ContactWrapper is empty, query the object and return only results of those records added to the Selected Agents Map
+        public List<Contact> agents {
+            get {
+                if(agents == null) {
+                    agents = new List<Contact>([SELECT Id, Name, City__c, State__c, Phone, Email
+                                                                FROM Contact
+                                                                WHERE Id IN :selectedAgents.keySet()
+                                                                ORDER BY Name]);
+                }
+                return agents;
+            } 
+            private set;   
         }
-    }
+
+        // When button is activated, return user to List of Agents Page
+        public Pagereference newSearch() {
+            Pagereference newPage = Page.ListOfAgentsPage;
+            newPage.setRedirect(true);
+            return newPage;
+        }
 }
