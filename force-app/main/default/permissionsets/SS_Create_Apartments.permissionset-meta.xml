@@ -833,6 +833,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Contact.City__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Contact.Credit_Card_Expiration_Month__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -949,6 +954,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Contact.ReportsToId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.State__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

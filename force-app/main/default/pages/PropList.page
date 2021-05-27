@@ -1,18 +1,21 @@
-<apex:page Controller="NewApartmentAndUnits" lightningStylesheets="true">
+<apex:page Controller="NewApartmentAndUnits" >
     <apex:form >
         <apex:pageBlock title="Apartment and its Units" >
-            <apex:pageblockSection title="Apartment Details" columns="2">
-                <apex:outputText Value="{!wApt.apt.Name}"/>
+            <apex:pageblockSection title="Apartment Details" columns="3">
+                <apex:outputLink value="/{!wApt.apt.ID}">
+                    <apex:outputText value="{!wApt.apt.Name}"/>                    
+                </apex:outputLink>               
                 <apex:outputText Value="{!wApt.apt.Total_SqFt_of_the_Building__c}"/>
                 <!--apex:outputText Value="{!wApt.apt.Total_No_Of_Units__c}"/-->
             </apex:pageblockSection>
             
             <apex:pageblockSection title="Apartment Units" columns="2">
                 <apex:repeat value="{! wApt.prop}" var="p">                 
-                  <apex:outputText value="{! p.Property_ID__c}"/> 
-                   <apex:outputText value="{! p.Area_in_SqFt__c}"/>  
+                    <apex:outputText value="{! p.Property_ID__c}"/> 
+                    <apex:outputText value="{! p.Area_in_SqFt__c}"/>  
                 </apex:repeat>
             </apex:pageblockSection>
+            
         </apex:pageBlock>
     </apex:form>
 </apex:page>

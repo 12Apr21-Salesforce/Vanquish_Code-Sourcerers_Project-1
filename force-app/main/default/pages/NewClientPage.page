@@ -1,4 +1,5 @@
-<apex:page standardController="Client__c" extensions="reRoutetoContactList" lightningStylesheets="true">
+<apex:page standardController="Client__c" extensions="reRoutetoContactList" lightningStylesheets="true" showHeader="false">
+
     <apex:form id="addNewClientForm">
         <apex:pageBlock title="Please Enter Your Contact Information" >
             <apex:pageBlockSection >

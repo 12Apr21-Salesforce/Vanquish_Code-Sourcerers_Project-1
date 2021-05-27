@@ -1093,6 +1093,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Contact.City__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Contact.Credit_Card_Expiration_Month__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -1210,6 +1215,11 @@
         <editable>true</editable>
         <field>Contact.ReportsToId</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.State__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -4162,6 +4172,10 @@
     <pageAccesses>
         <apexPage>InMaintenance</apexPage>
         <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ListOfAgentsPage</apexPage>
+        <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
         <apexPage>MultiAccountInsert</apexPage>

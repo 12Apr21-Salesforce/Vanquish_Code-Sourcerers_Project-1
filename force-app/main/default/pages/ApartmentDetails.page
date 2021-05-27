@@ -1,4 +1,4 @@
-<apex:page controller="NewApartmentAndUnits" lightningStylesheets="true">
+<apex:page controller="NewApartmentAndUnits" >
     <apex:form >
         <apex:pageBlock title="Apartment Details">
             <apex:pageBlockSection columns="1">
@@ -8,7 +8,6 @@
                     <apex:column value="{!al.apt.Total_SqFt_of_the_Building__c}"/>
                     <apex:column value="{!al.apt.Cost_of_Building__c}"/>
                     <apex:column value="{!al.apt.Total_No_Of_Units__c}"/>
-                    <apex:column value="{!al.apt.Cons_Cost_per_SqFt__c}"/>            
                 </apex:pageBlockTable>             
             </apex:pageBlockSection>
             
@@ -17,5 +16,6 @@
             </apex:pageBlockButtons>
             
         </apex:pageBlock>
+          <!--apex:outputLink value="https://revrealestate.force.com/SevenStones">Return Home</apex:outputLink-->
     </apex:form>
 </apex:page>
