@@ -81,18 +81,14 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
-<<<<<<< HEAD
         <apexClass>AgentTestDataFactory</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-=======
->>>>>>> main
         <apexClass>AgentsController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-<<<<<<< HEAD
         <apexClass>AgentsController_Test</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -149,13 +145,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-=======
->>>>>>> main
         <apexClass>EmailMsg</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-<<<<<<< HEAD
         <apexClass>ForgotPasswordController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -224,13 +217,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-=======
->>>>>>> main
         <apexClass>SeeContactsList</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-<<<<<<< HEAD
         <apexClass>SiteLoginController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -247,8 +237,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-=======
->>>>>>> main
         <apexClass>TestApartmentDeletion</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -269,7 +257,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-<<<<<<< HEAD
         <apexClass>multiAccountInsert</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -278,8 +265,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-=======
->>>>>>> main
         <apexClass>reRoutetoContactList</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -4397,7 +4382,6 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
-<<<<<<< HEAD
         <apexPage>ForgotPassword</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -4418,13 +4402,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-=======
->>>>>>> main
         <apexPage>ListOfAgentsPage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-<<<<<<< HEAD
         <apexPage>MultiAccountInsert</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -4437,13 +4418,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-=======
->>>>>>> main
         <apexPage>NewClientPage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-<<<<<<< HEAD
         <apexPage>NewProperties</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -4464,13 +4442,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-=======
->>>>>>> main
         <apexPage>SelectedAgentsPage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-<<<<<<< HEAD
         <apexPage>SiteLogin</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -4499,8 +4474,6 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-=======
->>>>>>> main
         <apexPage>addAPropertyPage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -4508,13 +4481,10 @@
         <apexPage>contactListPage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
-<<<<<<< HEAD
     <pageAccesses>
         <apexPage>teste</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
-=======
->>>>>>> main
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Contact.B2C</recordType>

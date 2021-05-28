@@ -1,38 +1,39 @@
 public with sharing class HireMe_CC {
 
     // look at sending pagerefe to this function to cut down on repeat code methods, abstract out the one change
+    public Boolean DisplayConfirm {get;set;}
+    public ApexPages.StandardController c1;
 
-    public Candidate__c neuHire{
-
+    public Contact neuHire{
         get{
             if (neuHire == null) {
-
-                neuHire = new Candidate__c();
+                neuHire = new Contact();
             }
             return neuHire;
-
         }
-        private set;
-
+        set;
     }
-    public PageReference Redirect2Client(){
 
-        PageReference newPage = Page.NewClientPage;
-        newPage.setRedirect(true);
+    public Case nCase{ /////////////////////////////// REMBER TO ADD CASE OWNER WHEN WE GO TO SAVE
+        get{
+            if (nCase == null) {
+                nCase = new Case();
+            }
+            return nCase;
+        }
+        set;
+    }
+    //*/
+    //DisplayConfirm = true;
+    public PageReference save(){
+
+       
+        c1.save();
+        DisplayConfirm = true;
+        PageReference newPage = Page.HireMePage;
+        newPage.setRedirect(false);
 
         return newPage;
+
     }
-    public PageReference Redirect2PropAdd(){
-
-        PageReference newPage = Page.addAPropertyPage;
-        newPage.setRedirect(true);
-
-        return newPage;
-    }
-
-    
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> main

@@ -1,18 +1,10 @@
-<<<<<<< HEAD
 <apex:page standardController="Client__c" extensions="reRoutetoContactList" lightningStylesheets="true" showHeader="false">
     <body style="background-color: transparent !important">
-=======
-<apex:page standardController="Client__c" extensions="reRoutetoContactList" lightningStylesheets="true">
->>>>>>> main
     <apex:form id="addNewClientForm">
         <apex:pageBlock title="Please Enter Your Contact Information" >
             <apex:pageBlockSection >
                 <apex:inputField value="{!Client__c.Name}"/>
-<<<<<<< HEAD
                 <!-- <apex:inputField value="{!Client__c.Property_Interested_In__c}"/> -->
-=======
-                <apex:inputField value="{!Client__c.Property_Interested_In__c}"/>
->>>>>>> main
                 <apex:inputField value="{!Client__c.Client_Email__c}"/>
                 <apex:inputField value="{!Client__c.Client_Phone__c}"/>
                 <apex:inputField value="{!Client__c.Funding_Status__c}"/>
@@ -23,8 +15,5 @@
             </apex:pageBlockButtons>
         </apex:pageBlock>
     </apex:form>
-<<<<<<< HEAD
     </body>
-=======
->>>>>>> main
 </apex:page>

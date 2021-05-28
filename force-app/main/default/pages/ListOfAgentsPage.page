@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <apex:page controller="AgentsController" tabStyle="Contact" lightningStylesheets="true" showHeader="false"> 
     <body style="background-color: transparent !important"> 
         <apex:form >
@@ -6,21 +5,11 @@
             <apex:pageMessages />
             <apex:pageBlockButtons >
                 <apex:commandButton action="{!listAgents}" value="See Your Selected Agents" />
-=======
-<apex:page controller="AgentsController" tabStyle="Contact" lightningStylesheets="true"> 
-<!--
-       <apex:form >
-        <apex:pageBlock title="Available Agents">
-            <apex:pageMessages />
-            <apex:pageBlockButtons >
-                <apex:commandButton action="{!listAgents}" value="See Your Selected Agents"  />
->>>>>>> main
             </apex:pageBlockButtons>
             <apex:pageBlockTable var="a" value="{!agentList}" >
                 <apex:column width="25px" headerValue="Select">
                     <apex:inputCheckbox value="{!a.checked}" />
                 </apex:column>
-<<<<<<< HEAD
                 <apex:column value="{!a.agents.Name}" />
                 <apex:column value="{!a.agents.City__c}" />
                 <apex:column value="{!a.agents.State__c}" />
@@ -28,12 +17,4 @@
         </apex:pageBlock>
         </apex:form>
     </body>
-=======
-                <apex:column value="{!a.agentList.Name}" />
-                <apex:column value="{!a.agentList.Phone}" />
-                <apex:column value="{!a.agentList.Email}" />
-            </apex:pageBlockTable>
-        </apex:pageBlock>
-    </apex:form>-->
->>>>>>> main
 </apex:page>

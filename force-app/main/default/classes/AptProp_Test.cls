@@ -1,6 +1,7 @@
 @isTest
 public class AptProp_Test {
     @isTest static void aptTest(){    
+               
         NewApartmentAndUnits controller = new NewApartmentAndUnits(); 
         PageReference pageRef = Page.NewApartment;
         
@@ -10,9 +11,12 @@ public class AptProp_Test {
                                                Total_No_Of_Units__c=20,Cost_of_Building__c=6000000);
     	PageReference propPage = controller.newApartment();
        	String aptDetailsPage = (String)propPage.getURL();
-        System.debug('new proper url '+aptDetailsPage);
+        
         Apartment__c aResults = [select id, name from Apartment__c where name='Lake View Apartments'];
         System.assertEquals('/apex/NewProperties?id='+aResults.Id,aptDetailsPage);
+        
+        propPage.getParameters().put('id', aResults.id);
+
         
         Test.setCurrentPage(propPage);
         controller.wApt.prop[0] = new Property__c(Apartment_Name__c=aResults.id, Name='TwoBed Flat', 
@@ -23,7 +27,7 @@ public class AptProp_Test {
         System.debug('Property Insert '+controller.wApt.prop[0].Property_ID__c+' '+controller.wApt.prop[1].Property_ID__c);
         
         PageReference propDetails = controller.saveProperties();
-        System.debug('prop results'+propDetails);
+        
         String propDetailsPage = (String)propDetails.getURL();
         Test.setCurrentPage(propDetails);
 
@@ -34,8 +38,21 @@ public class AptProp_Test {
         System.assertEquals(1000,pResults.Area_in_Sqft__c);
         Test.stopTest();
     }
-    
+    /*
     @isTest static void aptLinkTest(){ 
+        NewApartmentAndUnits controller = new NewApartmentAndUnits(); 
+        PageReference pageRef = Page.NewApartment;
         
-    }
+        Test.StartTest();  
+        Test.setCurrentPage(pageRef);
+        controller.wApt.apt = new Apartment__c(Name = 'Lake View Apartments', Total_SqFt_of_the_Building__c=30000, 
+                                               Total_No_Of_Units__c=20,Cost_of_Building__c=6000000);
+    	PageReference propPage = controller.newApartment();
+       	String aptDetailsPage = (String)propPage.getURL();
+        Apartment__c aResults = [select id, name from Apartment__c where name='Lake View Apartments'];
+        
+        System.assertEquals('https://universalcontainers207.lightning.force.com/a0G5e000000l41iEAA', aResults.Id);
+        
+
+    }*/
 }
