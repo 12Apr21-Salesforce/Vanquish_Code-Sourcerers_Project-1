@@ -32,11 +32,8 @@
         <apex:pageBlockSection >
             <apex:inputField value="{!nCase.ContactId}"/>
             <apex:inputField value="{!nCase.Reason}"/>
-            <apex:inputField value="{!nCase.Source}"/>
             <apex:inputField value="{!nCase.Subject}"/>
             <apex:inputField value="{!nCase.Priority}"/>
-           
-
             <apex:inputField value="{!nCase.Description}"/>
             <br/>
             
