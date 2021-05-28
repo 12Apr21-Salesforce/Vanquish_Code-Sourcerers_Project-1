@@ -1,4 +1,5 @@
-<apex:page Controller="NewApartmentAndUnits" >
+<apex:page Controller="NewApartmentAndUnits" showHeader="false">
+    <body style="background-color: transparent !important">
     <apex:form >
         <apex:pageBlock title="Apartment and its Units" >
             <apex:pageblockSection title="Apartment Details" columns="3">
@@ -18,4 +19,5 @@
             
         </apex:pageBlock>
     </apex:form>
+    </body>
 </apex:page>

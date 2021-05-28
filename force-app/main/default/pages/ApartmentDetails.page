@@ -1,4 +1,5 @@
-<apex:page controller="NewApartmentAndUnits" >
+<apex:page controller="NewApartmentAndUnits" showHeader="false">
+    <body style="background-color: transparent !important">
     <apex:form >
         <apex:pageBlock title="Apartment Details">
             <apex:pageBlockSection columns="1">
@@ -11,11 +12,12 @@
                 </apex:pageBlockTable>             
             </apex:pageBlockSection>
             
-            <apex:pageBlockButtons >
+            <!--apex:pageBlockButtons >
                 <apex:commandButton action="{!newProperties}" value="Create Units/Properties"/>
-            </apex:pageBlockButtons>
+            </apex:pageBlockButtons-->
             
         </apex:pageBlock>
           <!--apex:outputLink value="https://revrealestate.force.com/SevenStones">Return Home</apex:outputLink-->
     </apex:form>
+    </body>
 </apex:page>

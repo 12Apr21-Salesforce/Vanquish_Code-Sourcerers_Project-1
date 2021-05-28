@@ -3,32 +3,39 @@ public class AptProp_Test {
     @isTest static void aptTest(){    
         NewApartmentAndUnits controller = new NewApartmentAndUnits(); 
         PageReference pageRef = Page.NewApartment;
-        Test.setCurrentPage(pageRef);
         
-        
-        Apartment__c aptAdd = new Apartment__c(Name = 'Lake View Apartments', Total_SqFt_of_the_Building__c=30000, Total_No_Of_Units__c=20,Cost_of_Building__c=6000000);
         Test.StartTest();  
-        try{
-        	system.debug('before insert');
-            insert aptAdd ; 
-			system.debug('after insert');
-        } catch(Exception e){
-            System.Debug('Insert error '+e.getMessage());
-        }
+        Test.setCurrentPage(pageRef);
+        controller.wApt.apt = new Apartment__c(Name = 'Lake View Apartments', Total_SqFt_of_the_Building__c=30000, 
+                                               Total_No_Of_Units__c=20,Cost_of_Building__c=6000000);
+    	PageReference propPage = controller.newApartment();
+       	String aptDetailsPage = (String)propPage.getURL();
+        System.debug('new proper url '+aptDetailsPage);
+        Apartment__c aResults = [select id, name from Apartment__c where name='Lake View Apartments'];
+        System.assertEquals('/apex/NewProperties?id='+aResults.Id,aptDetailsPage);
         
-        String aptDetailsPage = controller.newApartment().getUrl();
-        System.assertEquals('/apex/ApartmentDetails',aptDetailsPage);
+        Test.setCurrentPage(propPage);
+        controller.wApt.prop[0] = new Property__c(Apartment_Name__c=aResults.id, Name='TwoBed Flat', 
+                                               Property_ID__c='MM101',Area_in_Sqft__c=1000);
+        controller.addRow();
+        controller.wApt.prop[1] = new Property__c(Apartment_Name__c=aResults.id, Name='ThreeBed Flat', 
+                                               Property_ID__c='MM102',Area_in_Sqft__c=1200);
+        System.debug('Property Insert '+controller.wApt.prop[0].Property_ID__c+' '+controller.wApt.prop[1].Property_ID__c);
         
-        controller = new NewApartmentAndUnits(); 
-        Property__c propAdd = new Property__c(Apartment_Name__c=aptAdd.Name, Name='TwoBed Flat', 
-                                               Property_ID__c='LV101',Area_in_Sqft__c=1000);
-        System.debug('Property Insert');
-        String newPropPage = controller.newProperties().getUrl();
-        system.assertEquals('/apex/newProperties',newPropPage);
-        
-        insert propAdd;
-        String propDetailsPage = controller.saveProperties().getUrl();
-        system.assertEquals('/apex/PropList',propDetailsPage);
+        PageReference propDetails = controller.saveProperties();
+        System.debug('prop results'+propDetails);
+        String propDetailsPage = (String)propDetails.getURL();
+        Test.setCurrentPage(propDetails);
+
+        System.assertEquals('/apex/PropList',propDetailsPage);
+
+        Property__c pResults = [select id, Property_ID__c, Area_in_Sqft__c from Property__c where Property_ID__c='MM101'];
+     	System.assertEquals('MM101',pResults.Property_ID__c);
+        System.assertEquals(1000,pResults.Area_in_Sqft__c);
         Test.stopTest();
+    }
+    
+    @isTest static void aptLinkTest(){ 
+        
     }
 }

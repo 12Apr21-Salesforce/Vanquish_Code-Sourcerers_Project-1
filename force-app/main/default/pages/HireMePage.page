@@ -1,5 +1,5 @@
-<apex:page standardController="Contact" extensions="HireMeEXT" lightningStylesheets="true">
-    
+<apex:page standardController="Contact" extensions="HireMeEXT" lightningStylesheets="true" showHeader="false">
+<body style="background-color: transparent !important">
     <apex:form >
         <apex:pageBlock title="Looking to join Us">
             
@@ -22,6 +22,6 @@
             
         </apex:pageBlock>        
     </apex:form>
-
+</body>
    
 </apex:page>
