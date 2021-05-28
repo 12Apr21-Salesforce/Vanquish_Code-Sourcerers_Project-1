@@ -64,8 +64,6 @@ private class AgentsController_Test {
         
         // Instantiate the controller
         AgentsController ac = new AgentsController();
-
-        //ac.agents = ags;
         
         // Get the list of ContactWrapper elements
         List<AgentsController.ContactWrapper> contactWrappers = ac.agentList;
