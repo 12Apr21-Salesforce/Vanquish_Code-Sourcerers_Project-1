@@ -7,13 +7,14 @@
             color: grey;
             line-height: 25px; 
            }
+        
     </style>
         
         
 
     <body style="background-color: transparent !important">
     <apex:pageBlock title="About Us">
-    <div class="aboutUs">
+    <div class="aboutUs" >
     
 
         Seven Stones Construction company is a real estate firm which builds Apartments and Single family houses for sale.<br/> 
