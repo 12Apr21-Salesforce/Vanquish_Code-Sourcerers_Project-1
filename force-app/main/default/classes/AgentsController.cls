@@ -56,7 +56,7 @@ public with sharing class AgentsController {
             return Page.SelectedAgentsPage;
         } else {
             ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR,'Please select at least one Agent'));
-            return null;
+            return Page.ListOfAgentsPage;
         }
         
     }
