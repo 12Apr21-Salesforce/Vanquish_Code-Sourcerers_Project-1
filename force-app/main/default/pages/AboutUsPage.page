@@ -1,9 +1,11 @@
 <apex:page lightningStylesheets="true" showHeader="false">
 
     <style>
-        .a {text-align: center; 
-            font-size: 12pt;
-             
+        .aboutUs{
+            text-align: center; 
+            font-size: 11pt;
+            color: grey;
+            line-height: 25px; 
            }
     </style>
         
@@ -11,7 +13,7 @@
 
     <body style="background-color: transparent !important">
     <apex:pageBlock title="About Us">
-    <div class="a">
+    <div class="aboutUs">
     
 
         Seven Stones Construction company is a real estate firm which builds Apartments and Single family houses for sale.<br/> 
