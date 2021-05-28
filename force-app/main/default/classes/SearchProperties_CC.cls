@@ -54,4 +54,8 @@ public with sharing class SearchProperties_CC {
         }
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main

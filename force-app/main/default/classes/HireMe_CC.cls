@@ -31,4 +31,8 @@ public with sharing class HireMe_CC {
     }
 
     
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main
