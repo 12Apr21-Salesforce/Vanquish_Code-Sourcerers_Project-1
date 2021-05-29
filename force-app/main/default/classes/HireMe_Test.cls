@@ -46,4 +46,8 @@ public with sharing class HireMe_Test {
 
 
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main
