@@ -88,4 +88,12 @@
         <name>Seven_Stones_Construction_Company</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>sevenstones</name>
+        <type>Network</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>Seven Stones</name>
+        <type>Network</type>
+    </appMenuItems>
 </AppMenu>

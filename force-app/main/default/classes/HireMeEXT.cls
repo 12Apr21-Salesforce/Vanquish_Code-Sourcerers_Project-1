@@ -1,6 +1,7 @@
 public with sharing class HireMeEXT {
 
-    private final Contact con;
+    public final Contact con {get;set;}
+
     // use this to get the stadard controller of the page to call its save function
     private ApexPages.StandardController c1;
     public Boolean DisplayConfirm {get;set;}
@@ -15,6 +16,7 @@ public with sharing class HireMeEXT {
         this.c1 = stdController;
         DisplayConfirm = false;
     }
+
 
     
 
@@ -34,8 +36,10 @@ public with sharing class HireMeEXT {
     }
 
 
+
     // save 2 prevents the standard saves redirect functionality
     public PageReference save2(){
+
 
         c1.save();
         DisplayConfirm = true;
@@ -45,5 +49,4 @@ public with sharing class HireMeEXT {
         return newPage;
 
     }
-    
-}
+

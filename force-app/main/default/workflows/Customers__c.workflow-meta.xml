@@ -6,7 +6,7 @@
             <name>Customer_updated_his_quote_price</name>
             <type>Task</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>Whenever customer updates price a new task is created and assigned to sales team.</description>
         <formula>ISCHANGED( Customer_Price__c )</formula>
         <triggerType>onAllChanges</triggerType>

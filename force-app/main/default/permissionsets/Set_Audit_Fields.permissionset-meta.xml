@@ -128,11 +128,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Apartment__c.Cost_of_Building__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Apartment__c.Country__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -159,11 +154,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Apartment__c.Total_No_Of_Units__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Apartment__c.Total_SqFt_of_the_Building__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -843,6 +833,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Contact.City__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Contact.Credit_Card_Expiration_Month__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -959,6 +954,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Contact.ReportsToId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.State__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2503,11 +2503,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Property__c.Area_in_SqFt__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Property__c.Bath_Rooms__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2553,7 +2548,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Property__c.List_Sale_Price__c</field>
+        <field>Property__c.List_Price__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2564,11 +2559,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Property__c.State__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Property__c.Status__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

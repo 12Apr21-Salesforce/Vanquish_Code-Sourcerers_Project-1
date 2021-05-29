@@ -35,21 +35,52 @@
                 <componentName>flexipage:filterListCard</componentName>
             </componentInstance>
         </itemInstances>
+        <mode>Replace</mode>
+        <name>top</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>flowLayout</name>
-                    <value>oneColumn</value>
+                    <name>enableInlineEdit</name>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
-                    <name>flowName</name>
-                    <value>New_Customer_Creation</value>
+                    <name>entityName</name>
+                    <value>Client__c</value>
                 </componentInstanceProperties>
-                <componentName>flowruntime:interview</componentName>
+                <componentInstanceProperties>
+                    <name>filterName</name>
+                    <value>All</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideActionBar</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideSearchBar</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>pageSize</name>
+                    <value>3</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:filterListCard</componentName>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
-        <name>top</name>
+        <name>bottomLeft</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>runtime_sales_activities:todayTaskContainer</componentName>
+            </componentInstance>
+        </itemInstances>
+        <mode>Replace</mode>
+        <name>bottomRight</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -80,26 +111,6 @@
                     <value>5</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:filterListCard</componentName>
-            </componentInstance>
-        </itemInstances>
-        <mode>Replace</mode>
-        <name>bottomLeft</name>
-        <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentName>runtime_sales_activities:todayTaskContainer</componentName>
-            </componentInstance>
-        </itemInstances>
-        <mode>Replace</mode>
-        <name>bottomRight</name>
-        <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentName>home:recentRecordContainer</componentName>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>

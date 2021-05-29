@@ -1,12 +1,12 @@
 @isTest
 public class TestApartmentDeletion {
     @isTest static void AptDeletionWithProp(){
-        Apartment__c Apt = new Apartment__c(Name = 'Lake View Apartments', 
-                                            Total_SqFt_of_the_Building__c=30000, Total_No_Of_Units__c=20);
+        Apartment__c Apt = new Apartment__c(Name = 'Lake View Apartments', Cost_of_Building__c=35000000,
+                                            Total_No_Of_Units__c=20,Total_SqFt_of_the_Building__c=30000);
     	insert Apt;
         
         Property__c prop = new Property__c(Apartment_Name__c=Apt.Id, Property_ID__c='DD212', 
-                              Name='LakeView Flat',Unit_Type__c='2Bed 2Bath',Status__c='Available');
+                              Name='LakeView Flat',Status__c='Available',Area_in_Sqft__c=1200);
         insert prop;
         
         Test.startTest();
@@ -20,7 +20,7 @@ public class TestApartmentDeletion {
     }
     
     @isTest static void AptDeletionWithoutProp(){
-        Apartment__c Apt = new Apartment__c(Name = 'Lake View Apartments1', 
+        Apartment__c Apt = new Apartment__c(Name = 'Lake View Apartments1', Cost_of_Building__c=35000000,
                                             Total_SqFt_of_the_Building__c=20000, Total_No_Of_Units__c=15);
     	insert Apt;   
         Test.startTest();

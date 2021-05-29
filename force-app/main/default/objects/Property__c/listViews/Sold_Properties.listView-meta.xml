@@ -5,7 +5,6 @@
     <columns>Apartment_Name__c</columns>
     <columns>Property_ID__c</columns>
     <columns>Area_in_SqFt__c</columns>
-    <columns>Property_Sold_To__c</columns>
     <columns>Status__c</columns>
     <columns>Customer_Price__c</columns>
     <filterScope>Everything</filterScope>
