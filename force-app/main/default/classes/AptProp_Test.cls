@@ -7,6 +7,7 @@ public class AptProp_Test {
         
         Test.StartTest();  
         Test.setCurrentPage(pageRef);
+        
         controller.wApt.apt = new Apartment__c(Name = 'Lake View Apartments', Total_SqFt_of_the_Building__c=30000, 
                                                Total_No_Of_Units__c=20,Cost_of_Building__c=6000000);
     	PageReference propPage = controller.newApartment();
@@ -20,21 +21,24 @@ public class AptProp_Test {
         
         Test.setCurrentPage(propPage);
         controller.wApt.prop[0] = new Property__c(Apartment_Name__c=aResults.id, Name='TwoBed Flat', 
-                                               Property_ID__c='MM101',Area_in_Sqft__c=1000);
+                                                  Property_ID__c='MM101',Area_in_Sqft__c=1000);
         controller.addRow();
         controller.wApt.prop[1] = new Property__c(Apartment_Name__c=aResults.id, Name='ThreeBed Flat', 
-                                               Property_ID__c='MM102',Area_in_Sqft__c=1200);
-        System.debug('Property Insert '+controller.wApt.prop[0].Property_ID__c+' '+controller.wApt.prop[1].Property_ID__c);
-        
+                                                  Property_ID__c='MM102',Area_in_Sqft__c=1200);
         PageReference propDetails = controller.saveProperties();
         
         String propDetailsPage = (String)propDetails.getURL();
         Test.setCurrentPage(propDetails);
-
+        
         System.assertEquals('/apex/PropList',propDetailsPage);
-
         Property__c pResults = [select id, Property_ID__c, Area_in_Sqft__c from Property__c where Property_ID__c='MM101'];
-     	System.assertEquals('MM101',pResults.Property_ID__c);
+        
+        //validating the display of property details in last page.
+        System.assertEquals('Lake View Apartments', aResults.Name);
+        System.assertEquals(30000, aResults.Total_SqFt_of_the_Building__c);
+        System.assertEquals(6000000, aResults.Cost_of_Building__c);
+                
+        System.assertEquals('MM101',pResults.Property_ID__c);
         System.assertEquals(1000,pResults.Area_in_Sqft__c);
         Test.stopTest();
     }
