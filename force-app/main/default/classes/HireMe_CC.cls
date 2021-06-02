@@ -2,9 +2,7 @@ public with sharing class HireMe_CC {
 
     // look at sending pagerefe to this function to cut down on repeat code methods, abstract out the one change
     public Boolean DisplayConfirm {get;set;}
-
     public Boolean DisplayConfirm2 {get;set;}
-
 
     
      
@@ -12,10 +10,8 @@ public with sharing class HireMe_CC {
         get{
             if (neuHire == null) {
                 neuHire = new Contact();
-
                 DisplayConfirm = false;
                 DisplayConfirm2 = false;
-
             }
             return neuHire;
         }
@@ -26,7 +22,7 @@ public with sharing class HireMe_CC {
         get{
             if (nCase == null) {
                 nCase = new Case();
-
+                
             }
             return nCase;
         }
@@ -53,19 +49,11 @@ public with sharing class HireMe_CC {
         nCase.Origin = 'Web';
        
         c2.save();
-
         DisplayConfirm2 = true;
-
-        DisplayConfirm = true;
-
         PageReference newPage = Page.HireMePage;
         newPage.setRedirect(false);
 
         return newPage;
 
     }
-
 }
-
-}
-

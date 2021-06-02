@@ -15,10 +15,6 @@
             <section>Additional Details</section>
         </sections>
     </layouts>
-    <quickActions>
-        <label></label>
-        <name>New_Job_App</name>
-    </quickActions>
     <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage></errorMessage>
