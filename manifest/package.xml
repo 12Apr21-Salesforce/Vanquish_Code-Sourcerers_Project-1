@@ -2,23 +2,11 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
 		<members>*</members>
-		<name>ActionLinkGroupTemplate</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>AnimationRule</name>
-	</types>
-	<types>
-		<members>*</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
 		<members>*</members>
 		<name>ApexComponent</name>
-	</types>
-	<types>
-		<members>apexEmailNotifications</members>
-		<name>ApexEmailNotifications</name>
 	</types>
 	<types>
 		<members>*</members>
@@ -46,14 +34,6 @@
 	</types>
 	<types>
 		<members>*</members>
-		<name>AuraDefinitionBundle</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>AuthProvider</name>
-	</types>
-	<types>
-		<members>*</members>
 		<name>AutoResponseRules</name>
 	</types>
 	<types>
@@ -62,51 +42,19 @@
 	</types>
 	<types>
 		<members>*</members>
-		<name>CallCenter</name>
-	</types>
-	<types>
-		<members>mule__dataloaderio_v2_oauth_c4s__dataloaderio_v2_oauth_c4sCanvas</members>
-		<name>CanvasMetadata</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Certificate</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ChannelLayout</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ChatterExtension</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CleanDataService</name>
-	</types>
-	<types>
-		<members>*</members>
 		<name>Community</name>
 	</types>
 	<types>
 		<members>*</members>
+		<name>CommunityTemplateDefinition</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>CommunityThemeDefinition</name>
+	</types>
+	<types>
+		<members>*</members>
 		<name>CompactLayout</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ConnectedApp</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ContentAsset</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CorsWhitelistOrigin</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CspTrustedSite</name>
 	</types>
 	<types>
 		<members>*</members>
@@ -115,10 +63,6 @@
 	<types>
 		<members>*</members>
 		<name>CustomApplicationComponent</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CustomFeedFilter</name>
 	</types>
 	<types>
 		<members>Account.Customer_ID__c</members>
@@ -158,6 +102,12 @@
 		<members>Candidate__c.Visa_Required__c</members>
 		<members>Candidate__c.Years_of_Experience__c</members>
 		<members>Candidate__c.Zip_Postal_Code__c</members>
+		<members>Client__c.Client_Email__c</members>
+		<members>Client__c.Client_Phone__c</members>
+		<members>Client__c.Client_Status__c</members>
+		<members>Client__c.Funding_Status__c</members>
+		<members>Client__c.Property_Interested_In__c</members>
+		<members>Contact.City__c</members>
 		<members>Contact.Credit_Card_Expiration_Month__c</members>
 		<members>Contact.Credit_Card_Expiration_Year__c</members>
 		<members>Contact.Credit_Card_Number__c</members>
@@ -166,6 +116,7 @@
 		<members>Contact.Credit_Card_Type__c</members>
 		<members>Contact.Credit_Care_Type2__c</members>
 		<members>Contact.Primary_CreditCard__c</members>
+		<members>Contact.State__c</members>
 		<members>Contact.Type2_Credit_Card_Number__c</members>
 		<members>Customers__c.Address__c</members>
 		<members>Customers__c.Cash_Component__c</members>
@@ -270,7 +221,7 @@
 		<members>Property__c.Date_Approved_Rejected__c</members>
 		<members>Property__c.Description__c</members>
 		<members>Property__c.Discount_Percentage__c</members>
-		<members>Property__c.List_Sale_Price__c</members>
+		<members>Property__c.List_Price__c</members>
 		<members>Property__c.Property_ID__c</members>
 		<members>Property__c.Property_Sold_To__c</members>
 		<members>Property__c.State__c</members>
@@ -315,10 +266,6 @@
 		<members>Zip_Code__c.City__c</members>
 		<members>Zip_Code__c.State__c</members>
 		<name>CustomField</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>CustomHelpMenuSection</name>
 	</types>
 	<types>
 		<members>*</members>
@@ -481,14 +428,6 @@
 		<name>Dashboard</name>
 	</types>
 	<types>
-		<members>*</members>
-		<name>DataCategoryGroup</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>DelegateGroup</name>
-	</types>
-	<types>
 		<members>Corporate_Graphics/UniversalcontainersGIF.gif</members>
 		<members>Public_Photos/guyjpg.jpg</members>
 		<members>Public_Photos/womaninglassesjpg.jpg</members>
@@ -500,12 +439,15 @@
 		<name>DuplicateRule</name>
 	</types>
 	<types>
-		<members>*</members>
-		<name>EclairGeoData</name>
-	</types>
-	<types>
 		<members>Workflow_Email_Templates/PositionwithnoInterviewers</members>
 		<members>Workflow_Email_Templates/Property_Sold</members>
+		<members>unfiled$public/CommunityChangePasswordEmailTemplate</members>
+		<members>unfiled$public/CommunityChgEmailVerNewTemplate</members>
+		<members>unfiled$public/CommunityChgEmailVerOldTemplate</members>
+		<members>unfiled$public/CommunityForgotPasswordEmailTemplate</members>
+		<members>unfiled$public/CommunityLockoutEmailTemplate</members>
+		<members>unfiled$public/CommunityVerificationEmailTemplate</members>
+		<members>unfiled$public/CommunityWelcomeEmailTemplate</members>
 		<members>unfiled$public/ContactFollowUpSAMPLE</members>
 		<members>unfiled$public/Email_alert_when_new_Apt_is_created</members>
 		<members>unfiled$public/LeadsNewassignmentnotificationSAMPLE</members>
@@ -537,19 +479,7 @@
 	</types>
 	<types>
 		<members>*</members>
-		<name>ExternalDataSource</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ExternalServiceRegistration</name>
-	</types>
-	<types>
-		<members>*</members>
 		<name>FieldSet</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>FlexiPage</name>
 	</types>
 	<types>
 		<members>*</members>
@@ -562,14 +492,6 @@
 	<types>
 		<members>*</members>
 		<name>FlowDefinition</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>GlobalValueSet</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>GlobalValueSetTranslation</name>
 	</types>
 	<types>
 		<members>*</members>
@@ -589,15 +511,7 @@
 	</types>
 	<types>
 		<members>*</members>
-		<name>InstalledPackage</name>
-	</types>
-	<types>
-		<members>*</members>
 		<name>Layout</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>LightningBolt</name>
 	</types>
 	<types>
 		<members>*</members>
@@ -633,6 +547,7 @@
 		<members>Case.AllOpenCases</members>
 		<members>Case.MyCases</members>
 		<members>Case.MyOpenCases</members>
+		<members>Client__c.All</members>
 		<members>CollaborationGroup.All_ChatterGroups</members>
 		<members>CommSubscription.All_CommSubscriptions</members>
 		<members>CommSubscriptionChannelType.All_CommSubscriptionChannelTypes</members>
@@ -656,6 +571,8 @@
 		<members>Customers__c.Non_Closed_deals</members>
 		<members>DataUseLegalBasis.All_DataUseLegalBases</members>
 		<members>DataUsePurpose.All_DataUsePurposes</members>
+		<members>DelegatedAccount.All_External_Managed_Accounts</members>
+		<members>DelegatedAccount.My_External_Managed_Accounts</members>
 		<members>Discovery__c.All</members>
 		<members>EngagementChannelType.All_EngagementChannelTypes</members>
 		<members>Entitlement.All_Entitlements</members>
@@ -719,26 +636,6 @@
 		<name>ListView</name>
 	</types>
 	<types>
-		<members>cms_document</members>
-		<members>cms_image</members>
-		<members>news</members>
-		<name>ManagedContentType</name>
-	</types>
-	<types>
-		<members>Account.Standard_Account_Match_Rule_v1_0</members>
-		<members>Contact.Standard_Contact_Match_Rule_v1_1</members>
-		<members>Lead.Standard_Lead_Match_Rule_v1_0</members>
-		<name>MatchingRule</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>MatchingRules</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>MilestoneType</name>
-	</types>
-	<types>
 		<members>*</members>
 		<name>MyDomainDiscoverableLogin</name>
 	</types>
@@ -756,76 +653,29 @@
 	</types>
 	<types>
 		<members>*</members>
-		<name>OauthCustomScope</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>PathAssistant</name>
-	</types>
-	<types>
-		<members>*</members>
 		<name>PermissionSet</name>
 	</types>
 	<types>
-		<members>*</members>
-		<name>PlatformCachePartition</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>PlatformEventChannel</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>PlatformEventChannelMember</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>PostTemplate</name>
-	</types>
-	<types>
-		<members>*</members>
+		<members>Admin</members>
+		<members>SS Users</members>
+		<members>Seven Stones Profile</members>
+		<members>sevenstones Profile</members>
 		<name>Profile</name>
 	</types>
 	<types>
-		<members>*</members>
-		<name>ProfilePasswordPolicy</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>ProfileSessionSetting</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Prompt</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Queue</name>
-	</types>
-	<types>
-		<members>*</members>
+		<members>Apartment__c.New_Property</members>
+		<members>New_Apartment</members>
 		<name>QuickAction</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>RecommendationStrategy</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>RecordActionDeployment</name>
 	</types>
 	<types>
 		<members>Contact.B2C</members>
 		<members>Contact.Standard</members>
+		<members>Opportunity.Opp_prospects</members>
 		<members>Position__c.Non_Technical_Position</members>
 		<members>Position__c.Technical_Position</members>
 		<members>Property__c.Apartment_Units</members>
 		<members>Property__c.Single_Family_Houses</members>
 		<name>RecordType</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>RedirectWhitelistUrl</name>
 	</types>
 	<types>
 		<members>RecruitingReports/Candidate_Competency_THv</members>
@@ -876,14 +726,6 @@
 	</types>
 	<types>
 		<members>*</members>
-		<name>SamlSsoConfig</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>Scontrol</name>
-	</types>
-	<types>
-		<members>*</members>
 		<name>Settings</name>
 	</types>
 	<types>
@@ -906,20 +748,9 @@
 		<name>SiteDotCom</name>
 	</types>
 	<types>
-		<members>*</members>
-		<name>StandardValueSetTranslation</name>
-	</types>
-	<types>
-		<members>*</members>
+		<members>SiteSamples</members>
+		<members>pdfstyles</members>
 		<name>StaticResource</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>SynonymDictionary</name>
-	</types>
-	<types>
-		<members>*</members>
-		<name>TopicsForObjects</name>
 	</types>
 	<types>
 		<members>Apartment__c.Apt_No_of_Units</members>
@@ -931,29 +762,6 @@
 		<members>Property__c.PropertyID_Format</members>
 		<members>Property__c.Property_Sold_To_Empty</members>
 		<name>ValidationRule</name>
-	</types>
-	<types>
-		<members>Account.AltavistaNews</members>
-		<members>Account.GoogleMaps</members>
-		<members>Account.GoogleNews</members>
-		<members>Account.GoogleSearch</members>
-		<members>Account.HooversProfile</members>
-		<members>Account.YahooMaps</members>
-		<members>Campaign.ViewAllCampaignMembers</members>
-		<members>Campaign.ViewCampaignInfluenceReport</members>
-		<members>Contact.GoogleMaps</members>
-		<members>Contact.GoogleSearch</members>
-		<members>Contact.SendGmail</members>
-		<members>Contact.YahooMaps</members>
-		<members>Contact.YahooWeather</members>
-		<members>Lead.AltavistaNews</members>
-		<members>Lead.GoogleMaps</members>
-		<members>Lead.GoogleNews</members>
-		<members>Lead.GoogleSearch</members>
-		<members>Lead.HooversProfile</members>
-		<members>Lead.SendGmail</members>
-		<members>Lead.YahooMaps</members>
-		<name>WebLink</name>
 	</types>
 	<types>
 		<members>*</members>
