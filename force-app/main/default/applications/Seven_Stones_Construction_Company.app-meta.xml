@@ -18,7 +18,7 @@
     <formFactors>Small</formFactors>
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
-    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavPersonalizationDisabled>true</isNavPersonalizationDisabled>
     <label>Seven Stones Construction Company</label>
     <navType>Standard</navType>
     <profileActionOverrides>
@@ -37,10 +37,13 @@
         <type>Flexipage</type>
         <profile>Admin</profile>
     </profileActionOverrides>
+    <setupExperience>all</setupExperience>
     <tabs>standard-home</tabs>
     <tabs>Apartment__c</tabs>
-    <tabs>Customers__c</tabs>
     <tabs>Property__c</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>Client__c</tabs>
+    <tabs>Customers__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Seven_Stones_Construction_Company_UtilityBar</utilityBar>
 </CustomApplication>

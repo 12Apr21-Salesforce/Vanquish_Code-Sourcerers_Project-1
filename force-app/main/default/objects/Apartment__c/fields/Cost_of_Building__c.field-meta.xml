@@ -4,8 +4,9 @@
     <externalId>false</externalId>
     <label>Cost of Building</label>
     <precision>12</precision>
-    <required>false</required>
+    <required>true</required>
     <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Currency</type>

@@ -6,6 +6,7 @@
     <columns>Cost_of_Building__c</columns>
     <columns>No_Available_Units__c</columns>
     <columns>No_of_Sold_Units__c</columns>
+    <columns>Cons_Cost_per_SqFt__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

@@ -18,7 +18,7 @@
         <picklist>Status__c</picklist>
         <values>
             <fullName>Available</fullName>
-            <default>false</default>
+            <default>true</default>
         </values>
         <values>
             <fullName>On Hold</fullName>

@@ -6,14 +6,14 @@
             <name>Customer_updated_his_quote_price</name>
             <type>Task</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <description>Whenever customer updates price a new task is created and assigned to sales team.</description>
         <formula>ISCHANGED( Customer_Price__c )</formula>
         <triggerType>onAllChanges</triggerType>
     </rules>
     <tasks>
         <fullName>Customer_updated_his_quote_price</fullName>
-        <assignedTo>tomben1@gmail.com</assignedTo>
+        <assignedTo>moonshine.machiavelli@mindful-badger-vem16u.com</assignedTo>
         <assignedToType>user</assignedToType>
         <description>Customer has updated the price. Look into it at the earliest.</description>
         <dueDateOffset>1</dueDateOffset>
