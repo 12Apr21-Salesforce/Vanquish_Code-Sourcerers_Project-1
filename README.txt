@@ -38,6 +38,10 @@ Once the extensions are installed, clone this repository and open the folder in 
 Type "authorize" to select "SFDX: Authorize an Org", and connect the project to your desired org.
 Before deploying the manifest to the org, follow the following steps to ensure your org will deploy with no errors:
 
+Ensure your org has Enabled ExperienceBundle Metadata API. 
+To find this option in your org, use Quick Find in the Setup menu to 
+search Digital Experiences > Settings, and ensure the checkbox is selected. Save if modified.
+
 From your target org, copy your admin user username (in email format) and paste replace the instances of an email format in the following files with that username:
 
 in Workflow folder:

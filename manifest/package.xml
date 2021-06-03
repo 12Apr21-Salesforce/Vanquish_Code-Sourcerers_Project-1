@@ -35,11 +35,40 @@
 		<members>multiAccountInsert</members>
 		<members>myController</members>
 		<members>reRoutetoContactList</members>
+		<members>SiteLoginController</members>
+		<members>SiteLoginControllerTest</members>
+		<members>SiteRegisterController</members>
+		<members>SiteRegisterControllerTest</members>
+		<members>MyProfilePageController</members>
+		<members>MyProfilePageControllerTest</members>
+		<members>LightningForgotPasswordController</members>
+		<members>LightningForgotPasswordControllerTest</members>
+		<members>LightningLoginFormController</members>
+		<members>LightningLoginFormControllerTest</members>
+		<members>LightningSelfRegisterController</members>
+		<members>LightningSelfRegisterControllerTest</members>
+		<members>ChangePasswordController</members>
+		<members>ChangePasswordControllerTest</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
 		<members>AboutUsPage</members>
+		<members>addAPropertyPage</members>
 		<members>ApartmentDetails</members>
+		<members>CommunitiesLanding</members>
+		<members>CommunitiesLogin</members>
+		<members>CommunitiesSelfReg</members>
+		<members>CommunitiesSelfRegConfirm</members>
+		<members>CommunitiesTemplate</members>
+		<members>IdeasHome</members>
+		<members>MyProfilePage</members>
+		<members>SiteLogin</members>
+		<members>SiteRegister</members>
+		<members>SiteRegisterConfirm</members>
+		<members>SiteTemplate</members>
+		<members>StdExceptionTemplate</members>
+		<members>Unauthorized</members>
+		<members>UnderConstruction</members>
 		<members>HireMePage</members>
 		<members>ListOfAgentsPage</members>
 		<members>NewApartment</members>
@@ -50,7 +79,14 @@
 		<members>PropertyListPrice</members>
 		<members>SearchAvailableProperties</members>
 		<members>SelectedAgentsPage</members>
-		<members>addAPropertyPage</members>
+		<members>ForgotPassword</members>
+		<members>ForgotPasswordConfirm</members>
+		<members>InMaintenance</members>
+		<members>FileNotFound</members>
+		<members>ChangePassword</members>
+		<members>Exception</members>
+		<members>AnswersHome</members>
+		<members>BandwidthExceeded</members>
 		<name>ApexPage</name>
 	</types>
 	<types>
@@ -160,6 +196,7 @@
 		<members>Customer_Record_Page</members>
 		<members>Property_Record_Page</members>
 		<members>Seven_Stones_Construction_Company_UtilityBar</members>
+		<members>Home_Page_Default</members>
 		<name>FlexiPage</name>
 	</types>
 	<types>
