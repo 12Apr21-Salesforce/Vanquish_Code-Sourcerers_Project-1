@@ -38,11 +38,14 @@ Once the extensions are installed, clone this repository and open the folder in 
 Type "authorize" to select "SFDX: Authorize an Org", and connect the project to your desired org.
 Before deploying the manifest to the org, follow the following steps to ensure your org will deploy with no errors:
 
-From your target org, copy your admin user username (in email format) and paste replace "THISTEXT" in the following files with that username:
+From your target org, copy your admin user username (in email format) and paste replace the instances of an email format in the following files with that username:
 
+in Workflow folder:
 Apartment__c.workflow-meta.xml
 Customer__c.workflow-meta.xml
 Property__c.workflow-meta.xml
+
+in Site folder:
 Seven_Stones.site-meta.xml
 
 After saving, you should be able to right-click the manifest and deploy to the target org.
