@@ -40,7 +40,9 @@ Before deploying the manifest to the org, follow the following steps to ensure y
 
 Ensure your org has Enabled ExperienceBundle Metadata API. 
 To find this option in your org, use Quick Find in the Setup menu to 
-search Digital Experiences > Settings, and ensure the checkbox is selected. Save if modified.
+search Digital Experiences > Settings, and ensure the checkbox is selected.
+If no Experience Bundle is active, enable it and select a domain name.
+Then you will be able to select settings.
 
 From your target org, copy your admin user username (in email format) and paste replace the instances of an email format in the following files with that username:
 
